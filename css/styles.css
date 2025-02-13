@@ -75,6 +75,26 @@ button:hover {
     color: white;
 }
 
+.throw-btn {
+    background: #ff4444;
+    padding: 10px 30px;
+    margin: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.throw-btn:hover {
+    background: #cc0000;
+}
+
+.hidden {
+    display: none;
+}
+
 .button-group {
     display: flex;
     gap: 1rem;

@@ -62,16 +62,18 @@ function handleResponse(response) {
         mascot: document.querySelector('#page3 .mascot'),
         heading: document.querySelector('#page3 h1'),
         text: document.querySelector('#page3 p'),
-        button: document.querySelector('#page3 button')
+        button: document.querySelector('#page3 button'),
+        throwButton: document.querySelector('.throw-btn')
     };
 
     if (response) {
         mascot.textContent = '😻';
-        mascot.classList.add('happy');
+        mascot.classList.add('happy-dance');
         mascot.style.color = '#ff69b4';
-        finalElements.heading.textContent = 'Aww thank you! 🥰🩵';
+        finalElements.heading.textContent = 'Aww thank you! 🥰';
         finalElements.text.textContent = "Here's flowers for you and some music while we're at it!";
         finalElements.button.textContent = "Change your mind? 😔";
+        finalElements.throwButton.classList.add('hidden');
         audio.src = "audio/audio.mp3";
     } else {
         mascot.textContent = '😿';
@@ -80,10 +82,28 @@ function handleResponse(response) {
         finalElements.heading.textContent = 'Oh... okay... 😢💔';
         finalElements.text.textContent = "I understand... here's still the flowers tho";
         finalElements.button.textContent = "Change your mind? 😊";
+        finalElements.throwButton.classList.remove('hidden');
         audio.src = "audio/audio2.mp3";
     }
 
     setTimeout(() => showPage(3, response), 1100);
+}
+
+function throwFlowers() {
+    const flowers = document.querySelector('#page3 .mascot');
+    const throwButton = document.querySelector('.throw-btn');
+    const dialogue = document.querySelector('#page3 .dialogue');
+
+    // Hide the flowers
+    flowers.classList.add('hidden');
+
+    // Update the message
+    dialogue.querySelector('h1').textContent = 'You threw them away... 😭';
+    dialogue.querySelector('p').textContent = 'I guess I’ll just keep them for myself...';
+
+    // Disable the throw button
+    throwButton.disabled = true;
+    throwButton.textContent = 'Flowers thrown 🗑️';
 }
 
 function handleReset() {
