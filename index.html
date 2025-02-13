@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Special</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Page 1: Initial Message -->
+        <div class="page active" id="page1">
+            <div class="mascot">🐱</div>
+            <div class="dialogue">
+                <h1>Happy Valentine's Day! 🌹</h1>
+                <p>Will you be my special someone?</p>
+                <button onclick="showPage(2)">Next</button>
+            </div>
+        </div>
+
+        <!-- Page 2: Choice -->
+        <div class="page" id="page2">
+            <div class="mascot" id="responseMascot">🐱</div>
+            <div class="dialogue">
+                <h2>What's your answer?</h2>
+                <div class="button-group">
+                    <button class="yes-btn" onclick="handleResponse(true)">YES!</button>
+                    <button class="no-btn" onclick="handleResponse(false)">No</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3: Final -->
+        <div class="page" id="page3">
+            <div class="mascot">🌸💐🌺</div>
+            <div class="dialogue">
+                <h1>Thank you! 🥰</h1>
+                <p>Here's flowers for you!</p>
+                <button onclick="location.reload()">Start Over</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
