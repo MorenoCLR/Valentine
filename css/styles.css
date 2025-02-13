@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #ffe6f2;
+    background: #D4F6FF;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -61,7 +61,7 @@ button:hover {
 }
 
 .yes-btn {
-    background: #ff69b4;
+    background: #1ebcf2;
     color: white;
 }
 
