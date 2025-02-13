@@ -67,7 +67,7 @@ function handleResponse(response) {
 
     if (response) {
         mascot.textContent = '😻';
-        mascot.classList.add('happy-dance');
+        mascot.classList.add('happy');
         mascot.style.color = '#ff69b4';
         finalElements.heading.textContent = 'Aww thank you! 🥰';
         finalElements.text.textContent = "Here's flowers for you and some music while we're at it!";
