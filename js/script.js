@@ -8,6 +8,11 @@ function showPage(pageNumber) {
     document.getElementById(`page${pageNumber}`).classList.add('active');
 }
 
+document.addEventListener('copy', (event) => {
+    event.preventDefault();
+    alert("Nono yaa.");
+});
+
 function handleResponse(response) {
     const mascot = document.getElementById('responseMascot');
     const finalMascot = document.querySelector('#page3 .mascot');
