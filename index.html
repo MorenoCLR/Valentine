@@ -16,8 +16,8 @@
         <div class="page active" id="page1">
             <div class="mascot">🐱</div>
             <div class="dialogue">
-                <h1>Happy Valentine's Day! 🌹</h1>
-                <p>Will you be my special someone?</p>
+                <h1>Happy Valentine's Day! Dina🌹</h1>
+                <p>You're really special to me.<br>I’d love to give you something just as special.</p>
                 <button onclick="showPage(2)">Next</button>
             </div>
         </div>
@@ -26,7 +26,7 @@
         <div class="page" id="page2">
             <div class="mascot" id="responseMascot">🐱</div>
             <div class="dialogue">
-                <h2>What's your answer?</h2>
+                <h2>Would you like that?</h2>
                 <div class="button-group">
                     <button class="no-btn" onclick="handleResponse(false)">No</button>
                     <button class="yes-btn" onclick="handleResponse(true)">YES!</button>
@@ -38,13 +38,17 @@
         <div class="page" id="page3">
             <div class="mascot">🌸💐🌺</div>
             <div class="dialogue">
-                <h1>Thank you! 🥰</h1>
-                <p>Here's flowers for you!</p>
-                <button onclick="location.reload()">Start Over</button>
+                <h1> Message </h1>
+                <p> Message </p>
+                <button onclick="location.reload()"> Message </button>
             </div>
         </div>
     </div>
 
     <script src="js/script.js"></script>
+    <audio id="page3Audio" hidden>
+        <source src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 </body>
 </html>
