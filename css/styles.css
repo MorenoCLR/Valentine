@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comic Sans MS', cursive, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 body {
@@ -11,7 +15,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    user-select: none;
 }
 
 .container {
