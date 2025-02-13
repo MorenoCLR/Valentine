@@ -128,3 +128,12 @@ button:hover {
 @keyframes sadFace {
     50% { transform: rotate(20deg); }
 }
+
+.throw {
+    animation: throwAway 1s ease-in-out forwards;
+}
+
+@keyframes throwAway {
+    0% { transform: translateY(0) rotate(0); opacity: 1; }
+    100% { transform: translateY(-100px) rotate(-30deg); opacity: 0; }
+}

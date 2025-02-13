@@ -94,16 +94,17 @@ function throwFlowers() {
     const throwButton = document.querySelector('.throw-btn');
     const dialogue = document.querySelector('#page3 .dialogue');
 
-    // Hide the flowers
-    flowers.classList.add('hidden');
+    // Add throw animation
+    flowers.classList.add('throw');
 
-    // Update the message
-    dialogue.querySelector('h1').textContent = 'You threw them away... 😭';
-    dialogue.querySelector('p').textContent = 'I guess I’ll just keep them for myself...';
-
-    // Disable the throw button
-    throwButton.disabled = true;
-    throwButton.textContent = 'Flowers thrown 🗑️';
+    // Update the message after animation completes
+    setTimeout(() => {
+        flowers.classList.add('hidden');
+        dialogue.querySelector('h1').textContent = 'You threw them away... 😭';
+        dialogue.querySelector('p').textContent = 'I guess I’ll just keep them for myself...';
+        throwButton.disabled = true;
+        throwButton.textContent = 'Flowers thrown 🗑️';
+    }, 1000); // Match the animation duration
 }
 
 function handleReset() {
