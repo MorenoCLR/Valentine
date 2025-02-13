@@ -69,7 +69,7 @@ function handleResponse(response) {
         mascot.textContent = '😻';
         mascot.classList.add('happy');
         mascot.style.color = '#ff69b4';
-        finalElements.heading.textContent = 'Aww thank you! 🥰💙';
+        finalElements.heading.textContent = 'Aww thank you! 🥰🩵';
         finalElements.text.textContent = "Here's flowers for you and some music while we're at it!";
         finalElements.button.textContent = "Change your mind? 😔";
         audio.src = "audio/audio.mp3";
